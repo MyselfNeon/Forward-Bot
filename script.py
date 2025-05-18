@@ -3,9 +3,11 @@ from config import Config
 
 class  Script(object):
   START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
-  HELP_TXT = """<u>```⁉️ **HELP** ```⁉️</u>
+  HELP_TXT = """<u>⁉️ **HELP**⁉️</u>
 
+```
 <u>** Available Commands ⚡**</u>
+```
 <b>\n⏣ __/start - Check I'm Alive__ 
 ⏣ __/forward - Forward Messages__
 ⏣ __/settings - Configure your Settings__
