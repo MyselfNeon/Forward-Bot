@@ -1,6 +1,3 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 import asyncio 
 from database import Db, db
@@ -12,20 +9,12 @@ from .db import connect_user_db
 
 CLIENT = CLIENT()
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 @Client.on_message(filters.command('settings'))
 async def settings(client, message):
    await message.reply_text(
-     "<b>Hᴇʀᴇ Is Tʜᴇ Sᴇᴛᴛɪɴɢs Pᴀɴᴇʟ⚙\n\nᴄʜᴀɴɢᴇ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ᴀs ʏᴏᴜʀ ᴡɪsʜ 👇</b>",
+     "<b>__Here is the Settings Panel__ ⚙️\n\n__Change your Settings as your Wish__</b>",
      reply_markup=main_buttons()
      )
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 @Client.on_callback_query(filters.regex(r'^settings'))
 async def settings_query(bot, query):
@@ -34,11 +23,11 @@ async def settings_query(bot, query):
   buttons = [[InlineKeyboardButton('back', callback_data="settings#main")]]
   if type=="main":
      await query.message.edit_text(
-       "<b>Hᴇʀᴇ Is Tʜᴇ Sᴇᴛᴛɪɴɢs Pᴀɴᴇʟ⚙\n\nᴄʜᴀɴɢᴇ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ᴀs ʏᴏᴜʀ ᴡɪsʜ 👇</b>",
+       "<b>__Here is the Settings Panel__ ⚙️\n\n__Change your Settings as your Wish__</b>",
        reply_markup=main_buttons())
   elif type=="extra":
        await query.message.edit_text(
-         "<b>Hᴇʀᴇ Is Tʜᴇ Exᴛʀᴀ Sᴇᴛᴛɪɴɢs Pᴀɴᴇʟ⚙</b>",
+         "<b>__Here is the Extra Settings panel__ ⚙️</b>",
          reply_markup=extra_buttons())
   elif type=="bots":
      buttons = [] 
