@@ -35,12 +35,12 @@ class  Script(object):
 ┣⪼📢 Uᴘᴅᴀᴛᴇ : [NeonFiles](https://t.me/neonfiles)
 ┣⪼🚀 Hᴏsᴛᴇᴅ Oɴ : [Heroku](https://heroku.com)
 ┣⪼📝 Lᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org><b><i>Python 3</i></b></a>
-┣⪼📚 Lɪʙʀᴀʀʏ : Pyrogram 2.11.0 
+┣⪼📚 Lɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram><b><i>Pyrogram</i></b></a>
 ┣⪼🗒️ Vᴇʀsɪᴏɴ : 0.18.3
 ╰━━━━━━━━━━━━━━━➣
 </b>"""
   STATUS_TXT = """
-  °• ❰ **Bᴏᴛ Sᴛᴀᴛᴜs** ❱ •°
+> **Bᴏᴛ Sᴛᴀᴛᴜs**
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼**⏳ Bᴏᴛ Uᴘᴛɪᴍᴇ:**`{}`
 ┃
@@ -59,7 +59,7 @@ class  Script(object):
   USER_DETAILS = "<b><u>📄 USERBOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ USER ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"  
          
   TEXT = """
-  °• ❰ **Fᴏʀᴡᴀʀᴅ Sᴛᴀᴛᴜs** ❱ •°
+> **Fᴏʀᴡᴀʀᴅ Sᴛᴀᴛᴜs**
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼<b>🕵 Fᴇᴄʜᴇᴅ Msɢ :</b> <code>{}</code>
 ┃
@@ -79,7 +79,7 @@ class  Script(object):
 ╰━━━━━━━━━━━━━━━➣ 
 """
   DUPLICATE_TEXT = """
-  °• ❰ **Uɴᴇǫᴜɪғʏ Sᴛᴀᴛᴜs** ❱ •°
+> **Uɴᴇǫᴜɪғʏ Sᴛᴀᴛᴜs**
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼ <b>Fᴇᴛᴄʜᴇᴅ Fɪʟᴇs:</b> <code>{}</code>
 ┃
