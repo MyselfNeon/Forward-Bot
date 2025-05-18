@@ -5,7 +5,7 @@ class  Script(object):
   START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
   HELP_TXT = """<u>⁉️ **HELP** ⁉️</u>
 
-<u>**Available Commands 🖱️**</u>
+<u>**AVAILABLE COMMANDS 🖱️**</u>
 <b>\n⏣ __/start - Check I'm Alive__ 
 ⏣ __/forward - Forward Messages__
 ⏣ __/settings - Configure your Settings__
@@ -13,7 +13,7 @@ class  Script(object):
 ⏣ __ /stop - Stop your Ongoing tasks__
 ⏣ __ /reset - Reset your Settings__</b>
 
-<b><u>💢 Features:</b></u>
+<b><u>💢 FEATURES 💢</b></u>
 <b>\n⪼ __Forward message from Public channel to your channel without Admin permission.\nIf the channel is private need Admin permission, if you can't give Admin permission then use Userbot, but in Userbot there is a chance to get your Account Ban so use fake Account__
 ⪼ __Custom Caption__
 ⪼ __Custom Button__
@@ -21,25 +21,23 @@ class  Script(object):
 ⪼ __Filter type of Messages__</b>
 """
   
-  HOW_USE_TXT = """<b><u>Before Forwarding ⚠️</b></u>
-<b>► __add a bot or userbot__
-► __add atleast one to channel__ `(your bot/userbot must be admin in there)`
-► __You can add chats or bots by using /settings__
-► __if the **From Channel** is private your userbot must be member in there or your bot must need admin permission in there also__
-► __Then use /forward to forward messages__
-
-► ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ [ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ](https://youtu.be/wO1FE-lf35I)</b>"""
+  HOW_USE_TXT = """<b><u>BEFORE FORWARDING ⚠️</b></u>
+<b>⪼ __Add a Bot or Userbot__
+⪼ __Sdd atleast One to channel__ `(your bot/userbot must be admin in there)`
+⪼ __You can add chats or bots by using /settings__
+⪼ __If the **From Channel** is private your Userbot must be member in there or your Bot must need Admin permission in there also__
+⪼ __Then use /forward to Forward messages__</b>"""
   
   ABOUT_TXT = """<b>
-╔════❰ ғᴏʀᴡᴀʀᴅ ʙᴏᴛ ❱═❍⊱❁۪۪
+╔════❰ Fᴏʀᴡᴀʀᴅ Bᴏᴛ ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣
-║┣⪼📃ʙᴏᴛ : [Fᴏʀᴡᴀᴅ Bᴏᴛ](https://t.me/VJForwardBot)
-║┣⪼👦Cʀᴇᴀᴛᴏʀ : [Kɪɴɢ VJ 👑](https://t.me/kingvj01)
-║┣⪼🤖Uᴘᴅᴀᴛᴇ : [VJ Bᴏᴛᴢ](https://t.me/vj_botz)
-║┣⪼📡Hᴏsᴛᴇᴅ ᴏɴ : Sᴜᴘᴇʀ Fᴀsᴛ
-║┣⪼🗣️Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ3
-║┣⪼📚Lɪʙʀᴀʀʏ : Pʏʀᴏɢʀᴀᴍ Gᴀᴛʜᴇʀ 2.11.0 
-║┣⪼🗒️Vᴇʀsɪᴏɴ : 0.18.3
+║┣⪼🤖 Bᴏᴛ : [Fᴏʀᴡᴀᴅ Bᴏᴛ](https://t.me/VJForwardBot)
+║┣⪼👨‍💻 Cʀᴇᴀᴛᴏʀ : [Kɪɴɢ VJ 👑](https://t.me/kingvj01)
+║┣⪼📢 Uᴘᴅᴀᴛᴇ : [VJ Bᴏᴛ](https://t.me/vj_botz)
+║┣⪼🚀 Hᴏsᴛᴇᴅ Oɴ : [Hᴇʀᴏᴋᴜ](https://heroku.com)
+║┣⪼📝 Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ3
+║┣⪼📚 Lɪʙʀᴀʀʏ : Pʏʀᴏɢʀᴀᴍ 2.11.0 
+║┣⪼🗒️ Vᴇʀsɪᴏɴ : 0.18.3
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱❁۪۪
 </b>"""
