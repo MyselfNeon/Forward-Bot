@@ -118,7 +118,7 @@ async def sys_status(bot, query):
     used_space = disk_usage.used / (1024**3)    # Convert to GB
     free_space = disk_usage.free / (1024**3)
     text = f"""
- °• ❰ **Sᴇʀᴠᴇʀ Sᴛᴀᴛs** ❱ •°
+> **Sᴇʀᴠᴇʀ Sᴛᴀᴛs**
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼ <b>Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ</b>: <code>{total_space:.2f} GB</code>
 ┣⪼ <b>Usᴇᴅ</b>: <code>{used_space:.2f} GB</code>
