@@ -1,6 +1,3 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 import re
 import asyncio 
@@ -14,10 +11,6 @@ from pyrogram.errors.exceptions.not_acceptable_406 import ChannelPrivate as Priv
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified, ChannelPrivate
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 @Client.on_message(filters.private & filters.command(["forward"]))
 async def run(bot, message):
     buttons = []
@@ -27,10 +20,10 @@ async def run(bot, message):
     if not _bot:
       _bot = await db.get_userbot(user_id)
       if not _bot:
-          return await message.reply("<code>You didn't added any bot. Please add a bot using /settings !</code>")
+          return await message.reply("<code>**__You didn't added any Bot. Please add a Bot using__** /settings !</code>")
     channels = await db.get_user_channels(user_id)
     if not channels:
-       return await message.reply_text("please set a to channel in /settings before forwarding")
+       return await message.reply_text("**__Please set a to channel in /settings before forwarding__**")
     if len(channels) > 1:
        for channel in channels:
           buttons.append([KeyboardButton(f"{channel['title']}")])
@@ -42,7 +35,7 @@ async def run(bot, message):
        to_title = _toid.text
        toid = btn_data.get(to_title)
        if not toid:
-          return await message.reply_text("wrong channel choosen !", reply_markup=ReplyKeyboardRemove())
+          return await message.reply_text("**__Wrong channel choosen !__**", reply_markup=ReplyKeyboardRemove())
     else:
        toid = channels[0]['chat_id']
        to_title = channels[0]['title']
@@ -54,7 +47,7 @@ async def run(bot, message):
         regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
         match = regex.match(fromid.text.replace("?single", ""))
         if not match:
-            return await message.reply('Invalid link')
+            return await message.reply('**__Invalid link__**')
         chat_id = match.group(4)
         last_msg_id = int(match.group(5))
         if chat_id.isnumeric():
@@ -63,9 +56,9 @@ async def run(bot, message):
         last_msg_id = fromid.forward_from_message_id
         chat_id = fromid.forward_from_chat.username or fromid.forward_from_chat.id
         if last_msg_id == None:
-           return await message.reply_text("**This may be a forwarded message from a group and sended by anonymous admin. instead of this please send last message link from group**")
+           return await message.reply_text("**__This may be a forwarded message from a group and sended by anonymous admin. instead of this please send last message link from group__**")
     else:
-        await message.reply_text("**invalid !**")
+        await message.reply_text("**__Invalid !__**")
         return 
     try:
         title = (await bot.get_chat(chat_id)).title
@@ -93,7 +86,3 @@ async def run(bot, message):
         reply_markup=reply_markup
     )
     STS(forward_id).store(chat_id, toid, int(skipno.text), int(last_msg_id))
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
