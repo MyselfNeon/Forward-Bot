@@ -2,13 +2,8 @@ import os
 from config import Config
 
 class  Script(object):
-  START_TXT = """<b>ʜɪ {}
-  
-ɪ'ᴍ ᴀ ᴀᴅᴠᴀɴᴄᴇᴅ ꜰᴏʀᴡᴀʀᴅ ʙᴏᴛ
-ɪ ᴄᴀɴ ꜰᴏʀᴡᴀʀᴅ ᴀʟʟ ᴍᴇssᴀɢᴇ ꜰʀᴏᴍ ᴏɴᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀɴᴏᴛʜᴇʀ ᴄʜᴀɴɴᴇʟ</b>
-
-**ᴄʟɪᴄᴋ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ**"""
-  HELP_TXT = """<b><u>🔆 Help</b></u>
+  START_TXT = """<b><i>Hello {mention}\n\nI am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
+  HELP_TXT = """<b><u>Help</b></u>
 
 <u>**📚 Available commands:**</u>
 <b>⏣ __/start - check I'm alive__ 
