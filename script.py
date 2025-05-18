@@ -30,7 +30,7 @@ class  Script(object):
   
   ABOUT_TXT = """<b>
 ╭━━━━━━━━━━━━━━━➣
-┣⪼🤖 Bᴏᴛ : <a href=https://www.t.me/ForwardKsBot><b><i>ForwardKsBot</i></b></a>
+┣⪼🤖 Bᴏᴛ : <a href=https://t.me/ForwardKsBot><b><i>ForwardKsBot</i></b></a>
 ┣⪼👨‍💻 Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/MyselfNeon><b><i>MyselfNeon</i></b></a>
 ┣⪼📢 Uᴘᴅᴀᴛᴇ : [NeonFiles](https://t.me/neonfiles)
 ┣⪼🚀 Hᴏsᴛᴇᴅ Oɴ : [Heroku](https://heroku.com)
