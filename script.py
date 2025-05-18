@@ -2,7 +2,7 @@ import os
 from config import Config
 
 class  Script(object):
-  START_TXT = """<b><i>Hello {mention}\n\nI am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
+  START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
   HELP_TXT = """<b><u>Help</b></u>
 
 <u>**📚 Available commands:**</u>
