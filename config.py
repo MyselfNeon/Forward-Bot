@@ -8,7 +8,7 @@ class Config:
     BOT_SESSION = environ.get("BOT_SESSION", "") 
     DATABASE_URI = environ.get("DATABASE_URI", "")
     DATABASE_NAME = environ.get("DATABASE_NAME", "MyselfNeon")
-    BOT_OWNER = int(environ.get("BOT_OWNER", "841851780"))
+    BOT_OWNER = int(environ.get("BOT_OWNER", ""))
 
 class temp(object): 
     lock = {}
