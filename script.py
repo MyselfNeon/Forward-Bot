@@ -5,7 +5,7 @@ class  Script(object):
   START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
   HELP_TXT = """<u>⁉️ **HELP** ⁉️</u>
 
-<u>**AVAILABLE COMMANDS 🖱️**</u>
+<u>** __AVAILABLE COMMANDS__ ⚡**</u>
 <b>\n⏣ __/start - Check I'm Alive__ 
 ⏣ __/forward - Forward Messages__
 ⏣ __/settings - Configure your Settings__
@@ -13,7 +13,7 @@ class  Script(object):
 ⏣ __ /stop - Stop your Ongoing tasks__
 ⏣ __ /reset - Reset your Settings__</b>
 
-<b><u>💢 FEATURES 💢</b></u>
+<b><u> __FEATURES__ 🎊</b></u>
 <b>\n⪼ __Forward message from Public channel to your channel without Admin permission.\nIf the channel is private need Admin permission, if you can't give Admin permission then use Userbot, but in Userbot there is a chance to get your Account Ban so use fake Account__
 ⪼ __Custom Caption__
 ⪼ __Custom Button__
@@ -21,16 +21,16 @@ class  Script(object):
 ⪼ __Filter type of Messages__</b>
 """
   
-  HOW_USE_TXT = """<b><u>BEFORE FORWARDING ⚠️</b></u>
-<b>⪼ __Add a Bot or Userbot__
-⪼ __Sdd atleast One to channel__ `(your bot/userbot must be admin in there)`
+  HOW_USE_TXT = """<b><u>__BEFORE FORWARDING__ ‼️</b></u>
+<b>\n⪼ __Add a Bot or Userbot__
+⪼ __Sdd atleast One to channel__ `(__your bot/userbot must be admin in there__)`
 ⪼ __You can add chats or bots by using /settings__
 ⪼ __If the **From Channel** is private your Userbot must be member in there or your Bot must need Admin permission in there also__
 ⪼ __Then use /forward to Forward messages__</b>"""
   
   ABOUT_TXT = """<b>
 ╭━━━━━━━━━━━━━━━➣
-┣⪼🤖 Bᴏᴛ : <b>{}</b>
+┣⪼🤖 Bᴏᴛ : <a href=https://www.t.me/ForwardKsBot><b><i>ForwardKsBot</i></b></a>
 ┣⪼👨‍💻 Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/MyselfNeon><b><i>MyselfNeon</i></b></a>
 ┣⪼📢 Uᴘᴅᴀᴛᴇ : [NeonFiles](https://t.me/neonfiles)
 ┣⪼🚀 Hᴏsᴛᴇᴅ Oɴ : [Heroku](https://heroku.com)
@@ -40,7 +40,7 @@ class  Script(object):
 ╰━━━━━━━━━━━━━━━➣
 </b>"""
   STATUS_TXT = """
-  °• ❰ Bᴏᴛ Sᴛᴀᴛᴜs ❱ •°
+  °• ❰ **Bᴏᴛ Sᴛᴀᴛᴜs** ❱ •°
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼**⏳ Bᴏᴛ Uᴘᴛɪᴍᴇ:**`{}`
 ┃
@@ -59,7 +59,7 @@ class  Script(object):
   USER_DETAILS = "<b><u>📄 USERBOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ USER ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"  
          
   TEXT = """
-  °• ❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱ •°
+  °• ❰ **Fᴏʀᴡᴀʀᴅ Sᴛᴀᴛᴜs** ❱ •°
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼<b>🕵 Fᴇᴄʜᴇᴅ Msɢ :</b> <code>{}</code>
 ┃
@@ -79,14 +79,14 @@ class  Script(object):
 ╰━━━━━━━━━━━━━━━➣ 
 """
   DUPLICATE_TEXT = """
-  °• ❰ ᴜɴᴇǫᴜɪғʏ sᴛᴀᴛᴜs ❱ •°
+  °• ❰ **Uɴᴇǫᴜɪғʏ Sᴛᴀᴛᴜs** ❱ •°
 ╭━━━━━━━━━━━━━━━➣
 ┣⪼ <b>Fᴇᴛᴄʜᴇᴅ Fɪʟᴇs:</b> <code>{}</code>
 ┃
 ┣⪼ <b>Dᴜᴘʟɪᴄᴀᴛᴇ Dᴇʟᴇᴛᴇᴅ:</b> <code>{}</code> 
 ╰━━━━━━━━━━━━━━━➣
 """
-  DOUBLE_CHECK = """<b><u>DOUBLE CHECKING ⚠️</b></u>
+  DOUBLE_CHECK = """<b><u>__DOUBLE CHECKING__ 🫡</b></u>
 <code>Before forwarding the messages Click the Yes button only after checking the following</code>
 
 <b>★ YOUR BOT:</b> [{botname}](t.me/{botuname})
