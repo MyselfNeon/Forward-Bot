@@ -3,25 +3,25 @@ from config import Config
 
 class  Script(object):
   START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
-  HELP_TXT = """<b><u>Help</b></u>
+  HELP_TXT = """<u>⁉️ **HELP** ⁉️</u>
 
-<u>**📚 Available commands:**</u>
-<b>⏣ __/start - check I'm alive__ 
-⏣ __/forward - forward messages__
-⏣ __/settings - configure your settings__
-⏣ __ /unequify - delete duplicate media messages in chats__
-⏣ __ /stop - stop your ongoing tasks__
-⏣ __ /reset - reset your settings__</b>
+<u>**Available Commands 🖱️**</u>
+<b>\n⏣ __/start - Check I'm Alive__ 
+⏣ __/forward - Forward Messages__
+⏣ __/settings - Configure your Settings__
+⏣ __ /unequify - Delete duplicate Media messages in Chats__
+⏣ __ /stop - Stop your Ongoing tasks__
+⏣ __ /reset - Reset your Settings__</b>
 
 <b><u>💢 Features:</b></u>
-<b>► __Forward message from public channel to your channel without admin permission. if the channel is private need admin permission, if you can't give admin permission then use userbot, but in userbot there is a chance to get your account ban so use fake account__
-► __custom caption__
-► __custom button__
-► __skip duplicate messages__
-► __filter type of messages__</b>
+<b>\n⪼ __Forward message from Public channel to your channel without Admin permission.\nIf the channel is private need Admin permission, if you can't give Admin permission then use Userbot, but in Userbot there is a chance to get your Account Ban so use fake Account__
+⪼ __Custom Caption__
+⪼ __Custom Button__
+⪼ __Skip Duplicate Messages__
+⪼ __Filter type of Messages__</b>
 """
   
-  HOW_USE_TXT = """<b><u>⚠️ Before Forwarding:</b></u>
+  HOW_USE_TXT = """<b><u>Before Forwarding ⚠️</b></u>
 <b>► __add a bot or userbot__
 ► __add atleast one to channel__ `(your bot/userbot must be admin in there)`
 ► __You can add chats or bots by using /settings__
