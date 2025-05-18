@@ -19,7 +19,7 @@ main_buttons = [[
     InlineKeyboardButton('♻️ Sᴜᴘᴘᴏʀᴛ', url='https://t.me/+o1s-8MppL2syYTI9'),
     InlineKeyboardButton('📢 Uᴘᴅᴀᴛᴇ', url='https://t.me/neonfiles')
 ],[
-    InlineKeyboardButton('💝 Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ', url='https://youtube.com/MyselfNeon')
+    InlineKeyboardButton('💝 Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ', url='https://youtube.com/@MyselfNeon')
 ],[
     InlineKeyboardButton('⁉️ Hᴇʟᴘ', callback_data='help'),
     InlineKeyboardButton('❤️‍🩹 ᴀʙᴏᴜᴛ', callback_data='about')
@@ -55,14 +55,14 @@ async def helpcb(bot, query):
         InlineKeyboardButton('❤️‍🩹 Aʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('⚙️ Sᴇᴛᴛɪɴɢs', callback_data='settings#main')
     ],[
-        InlineKeyboardButton('• back', callback_data='back')
+        InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='back')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(text=Script.HELP_TXT, reply_markup=reply_markup)
 
 @Client.on_callback_query(filters.regex(r'^how_to_use'))
 async def how_to_use(bot, query):
-    buttons = [[InlineKeyboardButton('• back', callback_data='help')]]
+    buttons = [[InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='help')]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
         text=Script.HOW_USE_TXT,
@@ -81,8 +81,8 @@ async def back(bot, query):
 @Client.on_callback_query(filters.regex(r'^about'))
 async def about(bot, query):
     buttons = [[
-         InlineKeyboardButton('• back', callback_data='help'),
-         InlineKeyboardButton('Stats ✨', callback_data='status')
+         InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='help'),
+         InlineKeyboardButton('Sᴛᴀᴛs ✨', callback_data='status')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
@@ -97,8 +97,8 @@ async def status(bot, query):
     forwardings = await db.forwad_count()
     upt = await get_bot_uptime(START_TIME)
     buttons = [[
-        InlineKeyboardButton('• back', callback_data='help'),
-        InlineKeyboardButton('System Stats ✨️', callback_data='systm_sts'),
+        InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='help'),
+        InlineKeyboardButton('Sʏsᴛᴇᴍ Sᴛᴀᴛs ✨️', callback_data='systm_sts'),
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
@@ -120,11 +120,11 @@ async def sys_status(bot, query):
     text = f"""
 ╔════❰ sᴇʀᴠᴇʀ sᴛᴀᴛs  ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣
-║┣⪼ <b>ᴛᴏᴛᴀʟ ᴅɪsᴋ sᴘᴀᴄᴇ</b>: <code>{total_space:.2f} GB</code>
-║┣⪼ <b>ᴜsᴇᴅ</b>: <code>{used_space:.2f} GB</code>
-║┣⪼ <b>ꜰʀᴇᴇ</b>: <code>{free_space:.2f} GB</code>
-║┣⪼ <b>ᴄᴘᴜ</b>: <code>{cpu}%</code>
-║┣⪼ <b>ʀᴀᴍ</b>: <code>{ram}%</code>
+║┣⪼ <b>Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ</b>: <code>{total_space:.2f} GB</code>
+║┣⪼ <b>Usᴇᴅ</b>: <code>{used_space:.2f} GB</code>
+║┣⪼ <b>Fʀᴇᴇ</b>: <code>{free_space:.2f} GB</code>
+║┣⪼ <b>CPU</b>: <code>{cpu}%</code>
+║┣⪼ <b>RAM</b>: <code>{ram}%</code>
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱❁۪۪
 """
