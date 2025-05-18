@@ -110,7 +110,7 @@ async def status(bot, query):
 
 @Client.on_callback_query(filters.regex(r'^systm_sts'))
 async def sys_status(bot, query):
-    buttons = [[InlineKeyboardButton('• back', callback_data='help')]]
+    buttons = [[InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='help')]]
     ram = psutil.virtual_memory().percent
     cpu = psutil.cpu_percent()
     disk_usage = psutil.disk_usage('/')
@@ -118,15 +118,14 @@ async def sys_status(bot, query):
     used_space = disk_usage.used / (1024**3)    # Convert to GB
     free_space = disk_usage.free / (1024**3)
     text = f"""
-╔════❰ sᴇʀᴠᴇʀ sᴛᴀᴛs  ❱═❍⊱❁۪۪
-║╭━━━━━━━━━━━━━━━➣
-║┣⪼ <b>Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ</b>: <code>{total_space:.2f} GB</code>
-║┣⪼ <b>Usᴇᴅ</b>: <code>{used_space:.2f} GB</code>
-║┣⪼ <b>Fʀᴇᴇ</b>: <code>{free_space:.2f} GB</code>
-║┣⪼ <b>CPU</b>: <code>{cpu}%</code>
-║┣⪼ <b>RAM</b>: <code>{ram}%</code>
-║╰━━━━━━━━━━━━━━━➣
-╚══════════════════❍⊱❁۪۪
+ °• ❰ **Sᴇʀᴠᴇʀ Sᴛᴀᴛs** ❱ •°
+╭━━━━━━━━━━━━━━━➣
+┣⪼ <b>Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ</b>: <code>{total_space:.2f} GB</code>
+┣⪼ <b>Usᴇᴅ</b>: <code>{used_space:.2f} GB</code>
+┣⪼ <b>Fʀᴇᴇ</b>: <code>{free_space:.2f} GB</code>
+┣⪼ <b>CPU</b>: <code>{cpu}%</code>
+┣⪼ <b>RAM</b>: <code>{ram}%</code>
+╰━━━━━━━━━━━━━━━➣
 """
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
