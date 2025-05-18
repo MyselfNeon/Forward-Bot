@@ -19,7 +19,7 @@ main_buttons = [[
     InlineKeyboardButton('♻️ Sᴜᴘᴘᴏʀᴛ', url='https://t.me/+o1s-8MppL2syYTI9'),
     InlineKeyboardButton('📢 Uᴘᴅᴀᴛᴇ', url='https://t.me/neonfiles')
 ],[
-    InlineKeyboardButton('💝 Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ', url='https://youtube.com/')
+    InlineKeyboardButton('💝 Mʏ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ', url='https://youtube.com/MyselfNeon')
 ],[
     InlineKeyboardButton('⁉️ Hᴇʟᴘ', callback_data='help'),
     InlineKeyboardButton('❤️‍🩹 ᴀʙᴏᴜᴛ', callback_data='about')
@@ -41,19 +41,19 @@ async def start(client, message):
 
 @Client.on_message(filters.private & filters.command(['restart']) & filters.user(Config.BOT_OWNER))
 async def restart(client, message):
-    msg = await message.reply_text(text="<i>Trying to restarting.....</i>")
+    msg = await message.reply_text(text="<i>**Trying to Restart.....**</i>")
     await asyncio.sleep(5)
-    await msg.edit("<i>Server restarted successfully ✅</i>")
+    await msg.edit("<i>**Server restarted successfully** ✅</i>")
     system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
     execle(sys.executable, sys.executable, "main.py", environ)
 
 @Client.on_callback_query(filters.regex(r'^help'))
 async def helpcb(bot, query):
     buttons = [[
-        InlineKeyboardButton('🤔 ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ❓', callback_data='how_to_use')
+        InlineKeyboardButton('Hᴏᴡ ᴛᴏ Usᴇ Mᴇ ❓', callback_data='how_to_use')
     ],[
-        InlineKeyboardButton('Aʙᴏᴜᴛ ✨️', callback_data='about'),
-        InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='settings#main')
+        InlineKeyboardButton('❤️‍🩹 Aʙᴏᴜᴛ', callback_data='about'),
+        InlineKeyboardButton('⚙️ Sᴇᴛᴛɪɴɢs', callback_data='settings#main')
     ],[
         InlineKeyboardButton('• back', callback_data='back')
     ]]
@@ -82,7 +82,7 @@ async def back(bot, query):
 async def about(bot, query):
     buttons = [[
          InlineKeyboardButton('• back', callback_data='help'),
-         InlineKeyboardButton('Stats ✨️', callback_data='status')
+         InlineKeyboardButton('Stats ✨', callback_data='status')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
