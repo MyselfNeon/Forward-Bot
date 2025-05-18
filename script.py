@@ -3,9 +3,9 @@ from config import Config
 
 class  Script(object):
   START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
-  HELP_TXT = """> <u>⁉️ **HELP**⁉️</u>
+  HELP_TXT = """> ⁉️ **HELP** ⁉️
 
-<u>** Available Commands ⚡**</u>
+> **AVAILABLE COMMANDS**
 <b>\n⏣ __/start - Check I'm Alive__ 
 ⏣ __/forward - Forward Messages__
 ⏣ __/settings - Configure your Settings__
@@ -13,7 +13,7 @@ class  Script(object):
 ⏣ __ /stop - Stop your Ongoing tasks__
 ⏣ __ /reset - Reset your Settings__</b>
 
-<b><u> __FEATURES__ 🎊</b></u>
+> **FEATURES** 🎊
 <b>\n⪼ __Forward message from Public channel to your channel without Admin permission.\nIf the channel is private need Admin permission, if you can't give Admin permission then use Userbot, but in Userbot there is a chance to get your Account Ban so use fake Account__
 ⪼ __Custom Caption__
 ⪼ __Custom Button__
@@ -21,7 +21,7 @@ class  Script(object):
 ⪼ __Filter type of Messages__</b>
 """
   
-  HOW_USE_TXT = """<b><u>__BEFORE FORWARDING__ ‼️</b></u>
+  HOW_USE_TXT = """> **BEFORE FORWARDING** ‼️
 <b>\n⪼ __Add a Bot or Userbot__
 ⪼ __Sdd atleast One to channel__ `(__your bot/userbot must be admin in there__)`
 ⪼ __You can add chats or bots by using /settings__
