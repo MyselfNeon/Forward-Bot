@@ -37,18 +37,18 @@ async def settings_query(bot, query):
         buttons.append([InlineKeyboardButton(_bot['name'],
                          callback_data=f"settings#editbot")])
      else:
-        buttons.append([InlineKeyboardButton('✚ Add bot ✚', 
+        buttons.append([InlineKeyboardButton('✚ Aᴅᴅ Bᴏᴛ ✚', 
                          callback_data="settings#addbot")])
      if usr_bot is not None:
         buttons.append([InlineKeyboardButton(usr_bot['name'],
                          callback_data=f"settings#edituserbot")])
      else:
-        buttons.append([InlineKeyboardButton('✚ Add User bot ✚', 
+        buttons.append([InlineKeyboardButton('✚ Aᴅᴅ Usᴇʀ Bᴏᴛ ✚', 
                          callback_data="settings#adduserbot")])
-     buttons.append([InlineKeyboardButton('back', 
+     buttons.append([InlineKeyboardButton('⬅️ Bᴀᴄᴋ', 
                       callback_data="settings#main")])
      await query.message.edit_text(
-       "<b><u>My Bots</b></u>\n\n<b>You can manage your bots in here</b>",
+       "<b><u>My Bots</b></u>\n\n<b>__You can manage your Bots in here__</b>",
        reply_markup=InlineKeyboardMarkup(buttons))
 
   elif type=="addbot":
@@ -56,7 +56,7 @@ async def settings_query(bot, query):
      bot = await CLIENT.add_bot(bot, query)
      if bot != True: return
      await query.message.reply_text(
-        "<b>bot token successfully added to db</b>",
+        "<b>__Bot token Successfully added to DB__</b>",
         reply_markup=InlineKeyboardMarkup(buttons))
 
   elif type=="adduserbot":
@@ -64,7 +64,7 @@ async def settings_query(bot, query):
      user = await CLIENT.add_session(bot, query)
      if user != True: return
      await query.message.reply_text(
-        "<b>session successfully added to db</b>",
+        "<b>Session Successfully added to DB__</b>",
         reply_markup=InlineKeyboardMarkup(buttons))
 
   elif type=="channels":
@@ -73,23 +73,23 @@ async def settings_query(bot, query):
      for channel in channels:
         buttons.append([InlineKeyboardButton(f"{channel['title']}",
                          callback_data=f"settings#editchannels_{channel['chat_id']}")])
-     buttons.append([InlineKeyboardButton('✚ Add Channel ✚', 
+     buttons.append([InlineKeyboardButton('✚ Aᴅᴅ Cʜᴀɴɴᴇʟ ✚', 
                       callback_data="settings#addchannel")])
-     buttons.append([InlineKeyboardButton('back', 
+     buttons.append([InlineKeyboardButton('⬅️ Bᴀᴄᴋ', 
                       callback_data="settings#main")])
      await query.message.edit_text( 
-       "<b><u>My Channels</b></u>\n\n<b>you can manage your target chats in here</b>",
+       "<b><u>My Channels</b></u>\n\n<b>__You can manage your Target chats in here__</b>",
        reply_markup=InlineKeyboardMarkup(buttons))
 
   elif type=="addchannel":  
      await query.message.delete()
-     chat_ids = await bot.ask(chat_id=query.from_user.id, text="<b>❪ SET TARGET CHAT ❫\n\nForward a message from Your target chat\n/cancel - cancel this process</b>")
+     chat_ids = await bot.ask(chat_id=query.from_user.id, text="> <b>SET TARGET CHAT \n\n__Forward a message from Your target chat__\n/cancel - __cancel this process__</b>")
      if chat_ids.text=="/cancel":
         return await chat_ids.reply_text(
-                  "<b>process canceled</b>",
+                  "<b>__Process canceled__</b>",
                   reply_markup=InlineKeyboardMarkup(buttons))
      elif not chat_ids.forward_date:
-        return await chat_ids.reply("**This is not a forward message**")
+        return await chat_ids.reply("**__This is not a forward message__**")
      else:
         chat_id = chat_ids.forward_from_chat.id
         title = chat_ids.forward_from_chat.title
@@ -97,15 +97,15 @@ async def settings_query(bot, query):
         username = "@" + username if username else "private"
      chat = await db.add_channel(user_id, chat_id, title, username)
      await query.message.reply_text(
-        "<b>Successfully updated</b>" if chat else "<b>This channel already added</b>",
+        "<b>__Successfully Updated__</b>" if chat else "<b>__This channel already added__</b>",
         reply_markup=InlineKeyboardMarkup(buttons))
 
   elif type=="editbot": 
      bot = await db.get_bot(user_id)
      TEXT = Script.BOT_DETAILS if bot['is_bot'] else Script.USER_DETAILS
-     buttons = [[InlineKeyboardButton('❌ Remove ❌', callback_data=f"settings#removebot")
+     buttons = [[InlineKeyboardButton('❌ Rᴇᴍᴏᴠᴇ ❌', callback_data=f"settings#removebot")
                ],
-               [InlineKeyboardButton('back', callback_data="settings#bots")]]
+               [InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data="settings#bots")]]
      await query.message.edit_text(
         TEXT.format(bot['name'], bot['id'], bot['username']),
         reply_markup=InlineKeyboardMarkup(buttons))
