@@ -8,7 +8,7 @@ from plugins.regix import restart_forwards
 
 if __name__ == "__main__":
     VJBot = VJ(
-        "VJ-Forward-Bot",
+        "Forward-Bot",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
