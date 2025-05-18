@@ -29,31 +29,27 @@ class  Script(object):
 ⪼ __Then use /forward to Forward messages__</b>"""
   
   ABOUT_TXT = """<b>
-╔════❰ Fᴏʀᴡᴀʀᴅ Bᴏᴛ ❱═❍⊱❁۪۪
-║╭━━━━━━━━━━━━━━━➣
-║┣⪼🤖 Bᴏᴛ : [Fᴏʀᴡᴀᴅ Bᴏᴛ](https://t.me/VJForwardBot)
-║┣⪼👨‍💻 Cʀᴇᴀᴛᴏʀ : [Kɪɴɢ VJ 👑](https://t.me/kingvj01)
-║┣⪼📢 Uᴘᴅᴀᴛᴇ : [VJ Bᴏᴛ](https://t.me/vj_botz)
-║┣⪼🚀 Hᴏsᴛᴇᴅ Oɴ : [Hᴇʀᴏᴋᴜ](https://heroku.com)
-║┣⪼📝 Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ3
-║┣⪼📚 Lɪʙʀᴀʀʏ : Pʏʀᴏɢʀᴀᴍ 2.11.0 
-║┣⪼🗒️ Vᴇʀsɪᴏɴ : 0.18.3
-║╰━━━━━━━━━━━━━━━➣
-╚══════════════════❍⊱❁۪۪
+╭━━━━━━━━━━━━━━━➣
+┣⪼🤖 Bᴏᴛ : <b>{}</b>
+┣⪼👨‍💻 Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/MyselfNeon><b><i>MyselfNeon</i></b></a>
+┣⪼📢 Uᴘᴅᴀᴛᴇ : [NeonFiles](https://t.me/neonfiles)
+┣⪼🚀 Hᴏsᴛᴇᴅ Oɴ : [Heroku](https://heroku.com)
+┣⪼📝 Lᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org><b><i>Python 3</i></b></a>
+┣⪼📚 Lɪʙʀᴀʀʏ : Pyrogram 2.11.0 
+┣⪼🗒️ Vᴇʀsɪᴏɴ : 0.18.3
+╰━━━━━━━━━━━━━━━➣
 </b>"""
   STATUS_TXT = """
-╔════❰ ʙᴏᴛ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪
-║╭━━━━━━━━━━━━━━━➣
-║┣⪼**⏳ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:**`{}`
-║┃
-║┣⪼**👱 Tᴏᴛᴀʟ Usᴇʀs:** `{}`
-║┃
-║┣⪼**🤖 Tᴏᴛᴀʟ Bᴏᴛ:** `{}`
-║┃
-║┣⪼**🔃 Fᴏʀᴡᴀʀᴅɪɴɢs:** `{}`
-║┃
-║╰━━━━━━━━━━━━━━━➣
-╚══════════════════❍⊱❁۪۪
+  °• ❰ Bᴏᴛ Sᴛᴀᴛᴜs ❱ •°
+╭━━━━━━━━━━━━━━━➣
+┣⪼**⏳ Bᴏᴛ Uᴘᴛɪᴍᴇ:**`{}`
+┃
+┣⪼**👱 Tᴏᴛᴀʟ Usᴇʀs:** `{}`
+┃
+┣⪼**🤖 Tᴏᴛᴀʟ Bᴏᴛ:** `{}`
+┃
+┣⪼**🔃 Fᴏʀᴡᴀʀᴅɪɴɢs:** `{}`
+╰━━━━━━━━━━━━━━━➣
 """
   FROM_MSG = "<b>❪ SET SOURCE CHAT ❫\n\nForward the last message or last message link of source chat.\n/cancel - cancel this process</b>"
   TO_MSG = "<b>❪ CHOOSE TARGET CHAT ❫\n\nChoose your target chat from the given buttons.\n/cancel - Cancel this process</b>"
@@ -63,34 +59,32 @@ class  Script(object):
   USER_DETAILS = "<b><u>📄 USERBOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ USER ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"  
          
   TEXT = """
-╔════❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪
-║╭━━━━━━━━━━━━━━━➣
-║┣⪼<b>🕵 ғᴇᴄʜᴇᴅ Msɢ :</b> <code>{}</code>
-║┃
-║┣⪼<b>✅ sᴜᴄᴄᴇғᴜʟʟʏ Fᴡᴅ :</b> <code>{}</code>
-║┃
-║┣⪼<b>👥 ᴅᴜᴘʟɪᴄᴀᴛᴇ Msɢ :</b> <code>{}</code>
-║┃
-║┣⪼<b>🗑 ᴅᴇʟᴇᴛᴇᴅ Msɢ :</b> <code>{}</code>
-║┃
-║┣⪼<b>🪆 Sᴋɪᴘᴘᴇᴅ Msɢ :</b> <code>{}</code>
-║┃
-║┣⪼<b>🔁 Fɪʟᴛᴇʀᴇᴅ Msɢ :</b> <code>{}</code>
-║┃
-║┣⪼<b>📊 Cᴜʀʀᴇɴᴛ Sᴛᴀᴛᴜs:</b> <code>{}</code>
-║┃
-║┣⪼<b>𖨠 Pᴇʀᴄᴇɴᴛᴀɢᴇ:</b> <code>{}</code> %
-║╰━━━━━━━━━━━━━━━➣ 
-╚════❰ {} ❱══❍⊱❁۪۪
+  °• ❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱ •°
+╭━━━━━━━━━━━━━━━➣
+┣⪼<b>🕵 Fᴇᴄʜᴇᴅ Msɢ :</b> <code>{}</code>
+┃
+┣⪼<b>✅ Sᴜᴄᴄᴇғᴜʟʟʏ Fᴡᴅ :</b> <code>{}</code>
+┃
+┣⪼<b>👥 Dᴜᴘʟɪᴄᴀᴛᴇ Msɢ :</b> <code>{}</code>
+┃
+┣⪼<b>🗑 Dᴇʟᴇᴛᴇᴅ Msɢ :</b> <code>{}</code>
+┃
+┣⪼<b>🪆 Sᴋɪᴘᴘᴇᴅ Msɢ :</b> <code>{}</code>
+┃
+┣⪼<b>🔁 Fɪʟᴛᴇʀᴇᴅ Msɢ :</b> <code>{}</code>
+┃
+┣⪼<b>📊 Cᴜʀʀᴇɴᴛ Sᴛᴀᴛᴜs:</b> <code>{}</code>
+┃
+┣⪼<b>𖨠 Pᴇʀᴄᴇɴᴛᴀɢᴇ:</b> <code>{}</code> %
+╰━━━━━━━━━━━━━━━➣ 
 """
   DUPLICATE_TEXT = """
-╔════❰ ᴜɴᴇǫᴜɪғʏ sᴛᴀᴛᴜs ❱═❍⊱❁۪۪
-║╭━━━━━━━━━━━━━━━➣
-║┣⪼ <b>ғᴇᴛᴄʜᴇᴅ ғɪʟᴇs:</b> <code>{}</code>
-║┃
-║┣⪼ <b>ᴅᴜᴘʟɪᴄᴀᴛᴇ ᴅᴇʟᴇᴛᴇᴅ:</b> <code>{}</code> 
-║╰━━━━━━━━━━━━━━━➣
-╚════❰ {} ❱══❍⊱❁۪۪
+  °• ❰ ᴜɴᴇǫᴜɪғʏ sᴛᴀᴛᴜs ❱ •°
+╭━━━━━━━━━━━━━━━➣
+┣⪼ <b>Fᴇᴛᴄʜᴇᴅ Fɪʟᴇs:</b> <code>{}</code>
+┃
+┣⪼ <b>Dᴜᴘʟɪᴄᴀᴛᴇ Dᴇʟᴇᴛᴇᴅ:</b> <code>{}</code> 
+╰━━━━━━━━━━━━━━━➣
 """
   DOUBLE_CHECK = """<b><u>DOUBLE CHECKING ⚠️</b></u>
 <code>Before forwarding the messages Click the Yes button only after checking the following</code>
@@ -100,9 +94,9 @@ class  Script(object):
 <b>★ TO CHANNEL:</b> `{to_chat}`
 <b>★ SKIP MESSAGES:</b> `{skip}`
 
-<i>° [{botname}](t.me/{botuname}) must be admin in **TARGET CHAT**</i> (`{to_chat}`)
-<i>° If the **SOURCE CHAT** is private your userbot must be member or your bot must be admin in there also</b></i>
+<i>° [{botname}](t.me/{botuname}) must be Admin in **TARGET CHAT**</i> (`{to_chat}`)
+<i>° If the **SOURCE CHAT** is private your Userbot must be member or your Bot must be Admin in there also</b></i>
 
-<b>If the above is checked then the yes button can be clicked</b>"""
+<b>If the above is checked then the YES button can be clicked</b>"""
   
-SETTINGS_TXT = """<b>change your settings as your wish</b>"""
+SETTINGS_TXT = """<b>Change your Settings as your Wish</b>"""
