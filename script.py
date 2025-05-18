@@ -5,7 +5,7 @@ class  Script(object):
   START_TXT = """<b><i>Hello</i> {}\n\n<i>I am Advanced Forward Bot.\nDeveloped by <a href='https://t.me/MyselfNeon'>NeonAnurag</a>.\n\nI can Forward all Messages from one Channel to another Channel !</i></b>"""
   HELP_TXT = """> ⁉️ **HELP** ⁉️
 
-> **COMMANDS** ❓
+> 💬 **COMMANDS** 💬
 <b>⏣ __/start - Check I'm Alive__ 
 ⏣ __/forward - Forward Messages__
 ⏣ __/settings - Configure your Settings__
@@ -13,7 +13,7 @@ class  Script(object):
 ⏣ __ /stop - Stop your Ongoing tasks__
 ⏣ __ /reset - Reset your Settings__</b>
 
-> **FEATURES** 🎊
+> 🎊 **FEATURES** 🎊
 <b>⪼ __Forward message from Public channel to your channel without Admin permission.\nIf the channel is private need Admin permission, if you can't give Admin permission then use Userbot, but in Userbot there is a chance to get your Account Ban so use fake Account__
 ⪼ __Custom Caption__
 ⪼ __Custom Button__
@@ -21,9 +21,9 @@ class  Script(object):
 ⪼ __Filter type of Messages__</b>
 """
   
-  HOW_USE_TXT = """> **BEFORE FORWARDING** ‼️
+  HOW_USE_TXT = """> ‼️ **BEFORE FORWARDING** ‼️
 <b>\n⪼ __Add a Bot or Userbot__
-⪼ __Sdd atleast One to channel__ `(__your bot/userbot must be admin in there__)`
+⪼ __Add atleast One to channel__ \n(__Your bot/userbot must be admin in there__)
 ⪼ __You can add chats or bots by using /settings__
 ⪼ __If the **From Channel** is private your Userbot must be member in there or your Bot must need Admin permission in there also__
 ⪼ __Then use /forward to Forward messages__</b>"""
