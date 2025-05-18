@@ -1,6 +1,3 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 import os
 import re 
@@ -25,20 +22,12 @@ from pyrogram.errors import (
     PasswordHashInvalid
 )
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)]\[buttonurl:/{0,2}(.+?)(:same)?])")
-BOT_TOKEN_TEXT = "<b>1) create a bot using @BotFather\n2) Then you will get a message with bot token\n3) Forward that message to me</b>"
+BOT_TOKEN_TEXT = "<b><i>1) Create a Bot using @BotFather\n2) Then you will get a message with Bot token\n3) Forward that message to me</i></b>"
 SESSION_STRING_SIZE = 351
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 class CLIENT: 
   def __init__(self):
@@ -52,9 +41,9 @@ class CLIENT:
      user_id = int(message.from_user.id)
      msg = await bot.ask(chat_id=user_id, text=BOT_TOKEN_TEXT)
      if msg.text=='/cancel':
-        return await msg.reply('<b>process cancelled !</b>')
+        return await msg.reply('<b>__Process cancelled !__</b>')
      elif not msg.forward_date:
-       return await msg.reply_text("<b>This is not a forward message</b>")
+       return await msg.reply_text("<b>__This is not a forward message__</b>")
      elif str(msg.forward_from.id) != "93372553":
        return await msg.reply_text("<b>This message was not forward from bot father</b>")
      bot_token = re.findall(r'\d[0-9]{8,10}:[0-9A-Za-z_-]{35}', msg.text, re.IGNORECASE)
